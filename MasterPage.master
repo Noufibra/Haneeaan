@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav>			
+							<ul id="bar" runat="server">
+                                <li><a href="Register.aspx" id="SignUp" runat="server">تسجيل</a></li>
+								<li><a href="SchedOrders.aspx" id="order" runat="server">تسجيل طلب</a></li>
+                                <li><a href="AdminHome.aspx" id="AdminH" runat="server">الطلبات المنتظرة</a></li>
+                                
+
+							</ul>
+						</nav>
+   
+    <div>
+         <asp:ContentPlaceHolder  id="ContentPlaceHolder1" runat="server" >
+								    
+                                 </asp:ContentPlaceHolder>
+    </div>
+    
+</body>
+</html>
