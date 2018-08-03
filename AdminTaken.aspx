@@ -3,10 +3,10 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <form id="form1" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="رقم الطلب" DataSourceID="SqlDataSource1">
+    <form id="form1" runat="server" style="align-content:center">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="رقم الطلب" align="center" DataSourceID="SqlDataSource1">
             <Columns>
-                 <asp:TemplateField HeaderText="اختيار طلب">
+                 <asp:TemplateField HeaderText="اختيار">
         <ItemTemplate>
           <input name="MyRadioButton" type="radio" 
                     value='<%# Eval("[رقم الطلب]") %>' />
@@ -28,7 +28,7 @@
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hajj_HakathonConnectionString %>" SelectCommand="select * from Services where [الحالة] = 'معلق'"></asp:SqlDataSource>
     
-        <asp:Button ID="Submit" runat="server" Text="تنفيذ" OnClick="Submit_Click" />
+        <asp:Button ID="Submit" runat="server" Text="تنفيذ" OnClick="Submit_Click"  align="center"/>
     </form>
 
 </asp:Content>

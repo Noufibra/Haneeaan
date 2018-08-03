@@ -16,6 +16,7 @@ public partial class AdminTaken : System.Web.UI.Page
     protected void Submit_Click(object sender, EventArgs e)
     {
         string selectedValue = Request.Form["MyRadioButton"];
+
         //string c = Session["UserID"].ToString();
 
         x.submitOrder(selectedValue,Session["UserID"].ToString());

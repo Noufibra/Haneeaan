@@ -46,14 +46,9 @@ public class DBFunctions
     public void submitOrder(string order, string servant) {
         con.Open();
         SqlCommand c = new SqlCommand("insert into Orders values ("+order+","+servant+")",con);
-        try
-        {
-            c.ExecuteScalar();
-        }
-        catch (Exception ex)
-        {
-            HttpContext.Current.Response.Write(ex.Message);
-        }
+
+        c.ExecuteScalar();
+
         con.Close();
     }
 

@@ -8,9 +8,18 @@
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
 </head>
-<body style=" opacity:0.5; align-content: center; no-repeat fixed center;">
+<body style="  align-content: center; no-repeat fixed center; font-size:14pt">
     <form>
+        <div align="center">
+
+            <img alt="haneeaan" class="auto-style1" src="Untitled-5.png" /></div>
     <div style="background-color: hsl(120, 50%, 80%); border-radius: 10px; width: 1148px; height: auto; align:center;  left: 219px; box-sizing:content-box; margin-left: 158px;">
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
