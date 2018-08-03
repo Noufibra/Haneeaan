@@ -9,9 +9,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["UserID"] != null) {
-            if (Session["Role"].ToString() == "Admin")
-                Signup.Visible = false;
+        if (Session["UserID"] != null)
+        {
+            Signup.Visible = false;
+            if (Session["Role"].ToString() != "Admin")
+                order.Visible = false;
         }
     }
 }

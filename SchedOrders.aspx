@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <form id="form1" runat="server">
-        <table class="auto-style1">
+        <table class="auto-style1" align="center">
             <tr>
                 <td class="auto-style2">
                     <asp:DropDownList ID="DropDownList1" runat="server">

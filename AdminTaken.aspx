@@ -6,13 +6,12 @@
     <form id="form1" runat="server" style="align-content:center">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="رقم الطلب" align="center" DataSourceID="SqlDataSource1">
             <Columns>
-                 <asp:TemplateField HeaderText="اختيار">
+                <asp:TemplateField HeaderText="اختيار">
         <ItemTemplate>
           <input name="MyRadioButton" type="radio" 
                     value='<%# Eval("[رقم الطلب]") %>' />
         </ItemTemplate>
       </asp:TemplateField>
-
                 <asp:BoundField DataField="الحالة" HeaderText="الحالة" SortExpression="الحالة" />
                 <asp:BoundField DataField="نوع الخدمة" HeaderText="نوع الخدمة" SortExpression="نوع الخدمة" />
                 <asp:BoundField DataField="الموقع" HeaderText="الموقع" SortExpression="الموقع" />
@@ -21,12 +20,10 @@
                 <asp:BoundField DataField="الوقت" HeaderText="الوقت" SortExpression="الوقت" />
                 <asp:BoundField DataField="اليوم" HeaderText="اليوم" SortExpression="اليوم" />
                 <asp:BoundField DataField="رقم الطلب" HeaderText="رقم الطلب" InsertVisible="False" ReadOnly="True" SortExpression="رقم الطلب" />
-           
-                
-                
-                 </Columns>
+            </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hajj_HakathonConnectionString %>" SelectCommand="select * from Services where [الحالة] = 'معلق'"></asp:SqlDataSource>
+    
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hajj_HakathonConnectionString %>" SelectCommand="select * from Services where [الحالة]='معلق'"></asp:SqlDataSource>
     
         <asp:Button ID="Submit" runat="server" Text="تنفيذ" OnClick="Submit_Click"  align="center"/>
     </form>
