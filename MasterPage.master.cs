@@ -14,6 +14,9 @@ public partial class MasterPage : System.Web.UI.MasterPage
             Signup.Visible = false;
             if (Session["Role"].ToString() != "Admin")
                 order.Visible = false;
+            AdminH.Visible = false;
         }
+        else
+            HyperLink1.Visible = false;
     }
 }

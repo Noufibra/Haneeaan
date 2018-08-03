@@ -27,6 +27,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <asp:HyperLink ID="Signup" runat="server" NavigateUrl="~/Register.aspx">التسجيل</asp:HyperLink>
+         &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/login.aspx">خروج</asp:HyperLink>
         &nbsp;<asp:HyperLink ID="order" runat="server" NavigateUrl="~/SchedOrders.aspx">تسجيل طلب</asp:HyperLink>
         &nbsp;<asp:HyperLink ID="AdminH" runat="server" NavigateUrl="~/AdminHome.aspx">الطلبات المنتظرة</asp:HyperLink>
         &nbsp;
