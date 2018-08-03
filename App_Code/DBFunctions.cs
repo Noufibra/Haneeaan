@@ -45,9 +45,25 @@ public class DBFunctions
 
     public void submitOrder(string order, string servant) {
         con.Open();
-        SqlCommand c = new SqlCommand("insert into Orders values ("+order+","+servant+")");
+        SqlCommand c = new SqlCommand("insert into Orders values ("+order+","+servant+")",con);
+        try
+        {
+            c.ExecuteScalar();
+        }
+        catch (Exception ex)
+        {
+            HttpContext.Current.Response.Write(ex.Message);
+        }
+        con.Close();
+    }
+
+    public void status(string order) {
+        con.Open();
+        SqlCommand c = new SqlCommand("update Services set [الحالة]='محجوز' where [رقم الطلب]= '" + order+"'", con);
         c.ExecuteScalar();
         con.Close();
+
+
     }
 
 }

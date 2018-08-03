@@ -16,8 +16,11 @@ public partial class AdminTaken : System.Web.UI.Page
     protected void Submit_Click(object sender, EventArgs e)
     {
         string selectedValue = Request.Form["MyRadioButton"];
+        //string c = Session["UserID"].ToString();
 
-        x.submitOrder("","");
+        x.submitOrder(selectedValue,Session["UserID"].ToString());
+        x.status(Session["UserID"].ToString());
+        Response.Redirect("AdminTaken.aspx");
         //x.Assign(selectedValue, TrID);
         //Response.Redirect("Default2.aspx");
     }

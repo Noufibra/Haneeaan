@@ -3,27 +3,34 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head runat="server" style="background-image:url(bg.jpg);">
     <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <nav>			
-							<ul id="bar" runat="server">
-                                <li><a href="Register.aspx" id="SignUp" runat="server">تسجيل</a></li>
-								<li><a href="SchedOrders.aspx" id="order" runat="server">تسجيل طلب</a></li>
-                                <li><a href="AdminHome.aspx" id="AdminH" runat="server">الطلبات المنتظرة</a></li>
-                                
+<body style=" opacity:0.5; align-content: center; no-repeat fixed center;">
+    <form>
+    <div style="background-color: hsl(120, 50%, 80%); border-radius: 10px; width: 1148px; height: auto; align:center;  left: 219px; box-sizing:content-box; margin-left: 158px;">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <asp:HyperLink ID="Signup" runat="server" NavigateUrl="~/Register.aspx">التسجيل</asp:HyperLink>
+        &nbsp;<asp:HyperLink ID="order" runat="server" NavigateUrl="~/SchedOrders.aspx">تسجيل طلب</asp:HyperLink>
+        &nbsp;<asp:HyperLink ID="AdminH" runat="server" NavigateUrl="~/AdminHome.aspx">الطلبات المنتظرة</asp:HyperLink>
+        &nbsp;
+        <asp:HyperLink ID="Take" runat="server" NavigateUrl="~/AdminTaken.aspx">أخذ طلب</asp:HyperLink>
+    &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 
-							</ul>
-						</nav>
-   
-    <div>
-         <asp:ContentPlaceHolder  id="ContentPlaceHolder1" runat="server" >
-								    
-                                 </asp:ContentPlaceHolder>
+     &nbsp;
+
+    <div style="padding:50px; border-radius: 10px; width: 1050px; height:auto; align:center; background-color:hsl(120, 50%, 80%); fit:inherit; margin-left: 157px;" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
     </div>
-    
+        </form>
 </body>
 </html>

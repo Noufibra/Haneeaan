@@ -26,7 +26,7 @@
                 
                  </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hajj_HakathonConnectionString %>" SelectCommand="select * from Services where [الحالة] = 'pending'"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hajj_HakathonConnectionString %>" SelectCommand="select * from Services where [الحالة] = 'معلق'"></asp:SqlDataSource>
     
         <asp:Button ID="Submit" runat="server" Text="تنفيذ" OnClick="Submit_Click" />
     </form>
